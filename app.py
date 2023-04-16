@@ -54,7 +54,7 @@ def comprar(message):
     s = pyshorteners.Shortener()
     link = s.tinyurl.short(link)
     bot.reply_to(message,f"*Link de pagamento*: {link}",parse_mode="Markdown")
-    bot.reply_to(message,"`duvidas tirar com`: @whzinn,parse_mode='Markdown')
+    bot.reply_to(message,"`duvidas tirar com`: @whzinn",parse_mode='Markdown')
 # Trata mensagens normais
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
