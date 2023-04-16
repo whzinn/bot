@@ -31,7 +31,7 @@ menu = """
 
 
 # Token do seu bot (você pode obtê-lo com o BotFather)
-TOKEN = '6137176290:AAGQFCsCJpGf3L6MHz5KdmzTkQFBX8UWBFI'
+TOKEN = '1995700005:AAFuK1Nk3aczl4SaHxMltrhc9jh0FYI0TYc'
 
 # Cria o objeto bot
 bot = telebot.TeleBot(TOKEN)
@@ -54,7 +54,7 @@ def comprar(message):
     s = pyshorteners.Shortener()
     link = s.tinyurl.short(link)
     bot.reply_to(message,f"*Link de pagamento*: {link}",parse_mode="Markdown")
-    bot.reply_to(message,"*duvidas tirar com*: @whzinn",parse_mode='Markdown')
+    bot.reply_to(message,"`duvidas tirar com`: @whzinn,parse_mode='Markdown')
 # Trata mensagens normais
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
