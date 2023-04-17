@@ -33,7 +33,7 @@ menu = """
 # Token do seu bot (você pode obtê-lo com o BotFather)
 TOKEN = '1995700005:AAFuK1Nk3aczl4SaHxMltrhc9jh0FYI0TYc'
 bot = telebot.TeleBot(TOKEN)
-bot.set_webhook(url="https://api.render.com/deploy/srv-cgu75vqut4mcfrh6b2h0?key=xLV_7EgG1wk")
+
 # Cria o objeto bot
 @bot.message_handler(commands=['menu'])
 def send_welcome(message):
