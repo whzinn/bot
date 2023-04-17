@@ -73,5 +73,3 @@ def cpf(message):
 
 # Inicia o bot
 bot.infinity_polling()
-while True:
-    pass
