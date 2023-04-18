@@ -31,7 +31,7 @@ menu = """
 
 
 # Token do seu bot (você pode obtê-lo com o BotFather)
-TOKEN = '1995700005:AAFuK1Nk3aczl4SaHxMltrhc9jh0FYI0TYc'
+TOKEN = '1995700005:AAEWAIkY7QfuI0gyJB-XSFBkAlIckfImiJc'
 bot = telebot.TeleBot(TOKEN)
 
 # Cria o objeto bot
