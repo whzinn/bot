@@ -8,7 +8,7 @@ def pix():
     email = "timpremiados@gmail.com"
     campo = "telegram bot"
     payment_data = {
-    "transaction_amount": 10.0,
+    "transaction_amount": 19.99,
     "description": f"Consulta placa:{campo} para o e-mail: {email}",
     "payment_method_id": "pix",
     "payer": {    
