@@ -16,7 +16,7 @@ def hello(cpf):
             "status":900,
             "noticia":"CPF INVALIDO"
         }
-    data = get(f"http://pat.mte.gov.br/sistemas/pnpeweb/pnpepesquisas.asp?acao=consultar%20cpf&cpf={cpf}").text
+    data = get(f"#").text
     if '<ROOT/>' in data:
         return {
             "status":400,
