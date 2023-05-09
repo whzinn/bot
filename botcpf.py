@@ -1,6 +1,6 @@
 import telebot, requests, json, re
 import server
-bot = telebot.TeleBot("1995700005:AAHN3xPRMPhaiSLgtyNBmNkMValry4v3EHw")
+bot = telebot.TeleBot("1995700005:A")
 
 def cpf(men):
   id1 = men.chat.id
