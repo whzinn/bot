@@ -32,7 +32,7 @@ menu = """
 
 
 # Token do seu bot (você pode obtê-lo com o BotFather)
-TOKEN = '1995700005:AAHN3xPRMPhaiSLgtyNBmNkMValry4v3EHw'
+TOKEN = '1995700005:AAHQ5EsaQbNFkcma789BuKeH3HCYZMjmUtQ'
 
 
 # Cria o objeto bot
