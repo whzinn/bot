@@ -26,7 +26,8 @@ menu = """
 [+] BUSCAR CELULAR:` /celular 21995854873` | vip
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--
 [+] BUSCAR NOME COMPLETO:` /nome Jair Bolsonaro` | vip
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+[+] BUSCAR PLACA: ` /placa ABC1234` | vip
 """
 
 
