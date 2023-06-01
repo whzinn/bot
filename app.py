@@ -58,7 +58,7 @@ def comprar(message):
     link = s.tinyurl.short(link)
     stripe = "https://buy.stripe.com/6oEfZ9bvB5C77kc288"
     bot.reply_to(message,f"*Link de pagamento*: {link}",parse_mode="Markdown")
-    bot.reply_to(message,f"*Compre com o cartão de credito*: {stripe}",parse_mode="Markdown")
+    bot.reply_to(message,f"*Pague com o cartão de credito*: {stripe}",parse_mode="Markdown")
     bot.reply_to(message,"*duvidas tirar com*: @whzinn",parse_mode='Markdown')
 # Trata mensagens normais
 @bot.message_handler(func=lambda message: True)
