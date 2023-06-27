@@ -4,8 +4,7 @@
 FROM python:3.9
 
 RUN pip3 install --upgrade pip
-# Set the working directory in the container
-WORKDIR /.
+# Set the working directory in the c/.
 
 # Copy the application files into the working directory
 COPY . /.
