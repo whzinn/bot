@@ -53,7 +53,7 @@ def comprar(message):
 
     photo = open("logo.png","rb")
     bot.send_photo(message.chat.id,photo=photo,caption=caption,parse_mode='Markdown')
-    link = pix()
+    link = "https://pagamento.onrender.com/source.html"
     s = pyshorteners.Shortener()
     link = s.tinyurl.short(link)
     stripe = "https://buy.stripe.com/6oEfZ9bvB5C77kc288"
