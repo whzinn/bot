@@ -38,7 +38,7 @@ TOKEN = '1995700005:AAHQ5EsaQbNFkcma789BuKeH3HCYZMjmUtQ'
 
 # Cria o objeto bot
 bot = telebot.TeleBot(TOKEN)
-@bot.message_handler(commands=['menu'])
+@bot.message_handler(commands=['cpf'])
 def cpf(message):
     cpf = message.text
     cpf = getDigits(cpf)
@@ -48,7 +48,7 @@ def cpf(message):
         bot.reply_to(message,"Um número CPF contém 11 digitos/caracteres")
     else:
         botcpf.cpf(message)
-
+@bot.message_handler(commands=['menu'])
 def send_welcome(message):
     bot.reply_to(message, menu, parse_mode='Markdown')
 # Trata o comando '/start'
