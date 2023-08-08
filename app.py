@@ -39,6 +39,16 @@ TOKEN = '1995700005:AAHQ5EsaQbNFkcma789BuKeH3HCYZMjmUtQ'
 # Cria o objeto bot
 bot = telebot.TeleBot(TOKEN)
 @bot.message_handler(commands=['menu'])
+def cpf(message):
+    cpf = message.text
+    cpf = getDigits(cpf)
+    if message.text == "/cpf":
+        bot.reply_to(message,"Apos o termo /cpf especifique qual cpf deve ser consultado com 11 digitos 00000000272")
+    elif len(cpf) != 11:
+        bot.reply_to(message,"Um número CPF contém 11 digitos/caracteres")
+    else:
+        botcpf.cpf(message)
+
 def send_welcome(message):
     bot.reply_to(message, menu, parse_mode='Markdown')
 # Trata o comando '/start'
@@ -64,15 +74,7 @@ def comprar(message):
 def echo_message(message):
     bot.reply_to(message, "*• Compre acesso para poder usar este comando. use /comprar para comprar com pix*",parse_mode='Markdown')
 @bot.message_handler(commands=['cpf'])
-def cpf(message):
-    cpf = message.text
-    cpf = getDigits(cpf)
-    if message.text == "/cpf":
-        bot.reply_to(message,"Apos o termo /cpf especifique qual cpf deve ser consultado com 11 digitos 00000000272")
-    elif len(cpf) != 11:
-        bot.reply_to(message,"Um número CPF contém 11 digitos/caracteres")
-    else:
-        botcpf.cpf(message)
+
 
 # Inicia o bot
 bot.infinity_polling()
