@@ -73,8 +73,6 @@ def comprar(message):
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
     bot.reply_to(message, "*• Compre acesso para poder usar este comando. use /comprar para comprar com pix*",parse_mode='Markdown')
-@bot.message_handler(commands=['cpf'])
-
 
 # Inicia o bot
 bot.infinity_polling()
