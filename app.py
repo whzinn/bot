@@ -59,7 +59,7 @@ def send_welcome(message):
 @bot.message_handler(commands=['comprar'])
 def comprar(message):
 
-    caption = "*Acesse o link de pagamento no Valor de 19.99 e pague via pix*"
+    caption = "*Acesse o link de pagamento no Valor de 39.99 e pague via pix*"
 
     photo = open("logo.png","rb")
     bot.send_photo(message.chat.id,photo=photo,caption=caption,parse_mode='Markdown')
