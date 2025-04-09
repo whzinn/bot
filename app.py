@@ -11,25 +11,19 @@ def getDigits(text):
     return num
 
 menu = """
-[+] BUSCAR CNPJ:` /cnpj 00000000001910` | vip
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--
-[+] CONSULTAR CPF:` /cpf1 00000000272` | vip
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--
-[+] BUSCAR CPF:` /cpf 00000000272` | vip
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--
-[+] BUSCAR CEP: `/cep 01001000` | vip
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--
-[+] GERAR CPF:` /gerarcpf` | vip
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--
-[+] GERAR CNPJ:` /gerarcnpj 10` | vip 
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--
-[+] BUSCAR CELULAR:` /celular 21995854873` | vip
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--
-[+] BUSCAR NOME COMPLETO:` /nome Jair Bolsonaro` | vip
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-[+] BUSCAR PLACA: ` /placa ABC1234` | vip
-"""
+*Para consultar escolha o comando e em seguida insira o dado ser consultado*
 
+
+*🔎 CONSULTAR CPF:* `/cpf 09082155419`
+
+*🗺 CONSULTAR CEP:* `/cep 01001000`
+
+*📞 CONSULTAR CELULAR:* `/celular 21995854873`
+
+*👤 CONSULTAR POR NOME:* `/nome Luiz Inacio Lula da silva `
+
+*🚘 CONSULTAR PLACA:*  `/placa ABC1234`
+"""
 
 
 # Token do seu bot (você pode obtê-lo com o BotFather)
