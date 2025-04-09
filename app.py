@@ -64,8 +64,8 @@ def comprar(message):
     bot.send_photo(message.chat.id,photo=photo,caption=caption,parse_mode='Markdown')
     link = "https://anonpay2-0.onrender.com/forma/107851139306"
   
-    s = pyshorteners.Shortener()
-    link = s.tinyurl.short(link)
+    #s = pyshorteners.Shortener()
+    #link = s.tinyurl.short(link)
     bot.reply_to(message,f"*Link de pagamento*: {link}",parse_mode="Markdown")
     #bot.reply_to(message,f"*Pague com o cartão de credito*: https://n9.cl/kbpio",parse_mode="Markdown")
     bot.reply_to(message,"*duvidas tirar com*: @whzinn",parse_mode='Markdown')
